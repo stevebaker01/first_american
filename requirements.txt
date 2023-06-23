@@ -1,3 +1,6 @@
 fastapi
 uvicorn
 faker
+pytest
+requests
+urllib3
