@@ -3,4 +3,4 @@ uvicorn
 faker
 pytest
 requests
-urllib3
+urllib3==1.23
