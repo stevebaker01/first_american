@@ -30,11 +30,6 @@ class IsNameMatched(BaseModel):
     IsNameMatched: bool = False
 
 
-class IsNameMatchedFull(IsNameMatched):
-    Extract: List[str] = []
-
-
-
 @app.post("/is_name_matched")
 async def is_name_matched(name_match: NameMatch):
     """
