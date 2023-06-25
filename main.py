@@ -1,4 +1,3 @@
-import json
 from fastapi import FastAPI, HTTPException
 from typing import List
 from pydantic import BaseModel

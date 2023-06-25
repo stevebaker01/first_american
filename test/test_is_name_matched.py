@@ -1,5 +1,5 @@
 from test.util import match_name, fake_name, prep_list
-from random import choice, shuffle
+from random import choice
 
 BASE_URL = "http://127.0.0.1:8000"
 MATCHED_URL = f"{BASE_URL}/is_name_matched"
