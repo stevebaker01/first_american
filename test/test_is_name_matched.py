@@ -50,7 +50,7 @@ class TestIsNameMatchedFull:
 
     def test_is_name_matched_single_buyer_multiple_owners_one_match(self, session):
         """
-        Multiple owners and a single owner match.
+        Multiple owners and a single buyer match.
         """
         owners = prep_list([fake_name(), fake_name(), fake_name(), fake_name(), fake_name()])
         buyers = prep_list([choice(owners).upper()])
@@ -72,7 +72,7 @@ class TestIsNameMatchedFull:
 
     def test_is_name_matched_single_buyer_multiple_owners_multiple_matches(self, session):
         """
-        Multiple owners and a single owner with multiple matches.
+        Multiple owners and a single buyer with multiple matches.
         """
         owners = prep_list(["Baker Steven A", "Baker Anne", "Baker Edwin C", "Baker Joanne I"])
         buyers = prep_list(["baker allen"])
@@ -143,7 +143,7 @@ class TestIsNameMatchedFull:
 
     def test_is_name_matched_short_last_name_match(self, session):
         """
-        Short lasts names (2 chars) with a match.
+        Short last names (2 chars) with a match.
         """
         json_data = match_name(buyers=prep_list(["HO KATE"]), owners=prep_list(["HO BART"]))
         res = session.post(MATCHED_URL, data=json_data)
