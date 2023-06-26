@@ -33,6 +33,7 @@ I have created [a service using FastAPI](https://github.com/stevebaker01/first_a
 4. I have assumed that a single match regardless number of buyers and owners will return *IsNameMatched=True*
 5. I have assumed that buyer and owner names can be represented in any case (title, upper or lower). I have written [a helper function](https://github.com/stevebaker01/first_american/blob/main/test/util.py#L12) to randomize the casing and order of elements in buyer and owner lists ensuring all variations ar covered.
 6. I have assumed that no buyers and/or no owners will raise a 404 Bad Request error.
+7. I have assumed that names will always follow the format "last name [first name [middle initial]]"
 
 All of these assumptions would precipitate questions to the production developer and/or product manager.
 My test plan began with several empty test cases with description. As I filled in the test case logic I added others test cases and ended up with [these 19](https://github.com/stevebaker01/first_american/blob/main/test/test_is_name_matched.py).
